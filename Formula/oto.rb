@@ -5,8 +5,8 @@ class Oto < Formula
   desc ""
   homepage ""
   url "https://toki-labs.com/cdn/oto/oto_cli.tar.gz"
-  version "0.0.1"
-  sha256 "b2b0cc844205036927ec565af5b68cf6025ab64c2d5c32ef446176c5229f42f6"
+  version "0.0.2"
+  sha256 "029f90a7203687b78f6aa1ef9e12b74336b03ec5a6eea41c8d77e0354c72ee21"
   license ""
 
   # depends_on "cmake" => :build
@@ -16,7 +16,7 @@ class Oto < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    bin.install "oto_cli"
+    bin.install "oto"
   end
 
   test do
@@ -29,6 +29,6 @@ class Oto < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system bin/"program", "do", "something"`.
-    system "#{bin}/oto_cli", "template", "-h"
+    system "#{bin}/oto", "template", "-h"
   end
 end
