@@ -4,7 +4,7 @@
 class Oto < Formula
   desc ""
   homepage ""
-  url "https://toki-labs.com/cdn/oto/oto_cli.tar.gz"
+  url "https://toki-labs.com/cdn/oto/oto.tar.gz"
   version "0.0.2"
   sha256 "029f90a7203687b78f6aa1ef9e12b74336b03ec5a6eea41c8d77e0354c72ee21"
   license ""
