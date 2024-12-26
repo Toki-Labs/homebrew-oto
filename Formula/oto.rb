@@ -6,7 +6,7 @@ class Oto < Formula
   homepage "https://toki-labs.com/oto"
   url "https://toki-labs.com/cdn/oto/oto_0.0.224.tar.gz"
   version "0.0.224"
-  sha256 "eb31f002df698c330ea215d4ed48a7877a7f305f1e0c3797c3b3037d9bbf1753"
+  sha256 "dc690feaac6e84083af3406e2ca41ab1ad43a1c87b962986e2cdd003dd373f26"
   license ""
 
   # depends_on "cmake" => :build
