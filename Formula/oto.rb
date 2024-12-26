@@ -4,9 +4,9 @@
 class Oto < Formula
   desc "Automation tool"
   homepage "https://toki-labs.com/oto"
-  url "https://toki-labs.com/cdn/oto/oto_0.0.221.tar.gz"
-  version "0.0.221"
-  sha256 "fe0b6a84131bc63249a70349c3a01341be7dd40a846dfe4ef239e66cd34383ac"
+  url "https://toki-labs.com/cdn/oto/oto_0.0.222.tar.gz"
+  version "0.0.222"
+  sha256 "fa430ca279e72ac99fb31bba51c52d90a01348e65fa1e9bd6d7823962308986a"
   license ""
 
   # depends_on "cmake" => :build
