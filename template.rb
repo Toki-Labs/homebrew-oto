@@ -2,12 +2,28 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Oto < Formula
-  desc "Automation tool"
+  desc "oto Automation tool"
   homepage "https://toki-labs.com/oto"
-  url "https://toki-labs.com/cdn/oto/FILE_NAME"
   version "VERSION"
-  sha256 "SHA256"
   license ""
+
+  if OS.mac?
+    if Hardware::CPU.arm? # Apple Silicon (arm64) 아키텍처인 경우
+      url "https://toki-labs.com/cdn/oto/osx/FILE_NAME_OSX_ARM"
+    sha256 "SHA256_OSX_ARM"
+    elsif Hardware::CPU.intel? # Intel (x86_64) 아키텍처인 경우
+      url "https://toki-labs.com/cdn/oto/osx/FILE_NAME_OSX_X86_64"
+    sha256 "SHA256_OSX_X86_64"
+    end
+  elsif OS.linux?
+    if Hardware::CPU.arm? # ARM 아키텍처인 경우
+      url "https://toki-labs.com/cdn/oto/linux/FILE_NAME_LINUX_ARM"
+      sha256 "SHA256_LINUX_ARM"
+    elsif Hardware::CPU.intel? # Intel/AMD 아키텍처인 경우
+      url "https://toki-labs.com/cdn/oto/linux/FILE_NAME_LINUX_X86_64"
+      sha256 "SHA256_LINUX_X86_64"
+    end
+  end
 
   # depends_on "cmake" => :build
 
@@ -16,7 +32,11 @@ class Oto < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    bin.install "oto"
+    if OS.mac?
+      bin.install "oto"
+    elsif OS.linux?
+      bin.install "oto"
+    end
   end
 
   test do
@@ -29,6 +49,10 @@ class Oto < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system bin/"program", "do", "something"`.
-    system "#{bin}/oto", "template", "-h"
+    if OS.mac?
+      system "#{bin}/oto", "template", "-h"
+    elsif OS.linux?
+      system "#{bin}/oto", "template", "-h"
+    end
   end
 end
