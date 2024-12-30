@@ -10,10 +10,10 @@ class Oto < Formula
   if OS.mac?
     if Hardware::CPU.arm? # Apple Silicon (arm64) 아키텍처인 경우
       url "https://toki-labs.com/cdn/oto/osx/FILE_NAME_OSX_ARM"
-    sha256 "SHA256_OSX_ARM"
+      sha256 "SHA256_OSX_ARM"
     elsif Hardware::CPU.intel? # Intel (x86_64) 아키텍처인 경우
       url "https://toki-labs.com/cdn/oto/osx/FILE_NAME_OSX_X86_64"
-    sha256 "SHA256_OSX_X86_64"
+      sha256 "SHA256_OSX_X86_64"
     end
   elsif OS.linux?
     if Hardware::CPU.arm? # ARM 아키텍처인 경우
