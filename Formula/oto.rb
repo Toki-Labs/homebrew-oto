@@ -9,8 +9,8 @@ class Oto < Formula
 
   if OS.mac?
     if Hardware::CPU.arm? # Apple Silicon (arm64) 아키텍처인 경우
-      url "https://toki-labs.com/cdn/oto/osx/oto_0.0.232.tar.gz"
-      sha256 "89c24f593ef1e36dcb48bfc5afc33a2aadce119274443da14515008495b9fbb4"
+      url "https://toki-labs.com/cdn/oto/osx/oto_arm_0.0.269.tar.gz"
+      sha256 "a456051d8a7b130253ff108b7dc79356f90bc0ffb50272c2c6337920108889fc"
     elsif Hardware::CPU.intel? # Intel (x86_64) 아키텍처인 경우
       url "https://toki-labs.com/cdn/oto/osx/oto_0.0.232.tar.gz"
       sha256 "89c24f593ef1e36dcb48bfc5afc33a2aadce119274443da14515008495b9fbb4"
