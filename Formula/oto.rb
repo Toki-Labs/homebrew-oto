@@ -4,7 +4,7 @@
 class Oto < Formula
   desc "oto Automation tool"
   homepage "https://toki-labs.com/oto"
-  version "0.0.263"
+  version "0.0.264"
   license ""
 
   if OS.mac?
@@ -20,8 +20,8 @@ class Oto < Formula
       url "https://toki-labs.com/cdn/oto/linux/FILE_NAME_LINUX_ARM"
       sha256 "SHA256_LINUX_ARM"
     elsif Hardware::CPU.intel? # Intel/AMD 아키텍처인 경우
-      url "https://toki-labs.com/cdn/oto/linux/oto_x64_0.0.263.tar.gz"
-      sha256 "3305800eb5e544c11941eb04fa9dfea1f27705592efac0be10349cd86df02217"
+      url "https://toki-labs.com/cdn/oto/linux/oto_x64_0.0.264.tar.gz"
+      sha256 "005b861014c883db48610966ea9288bef5b65284dfc96d3418e7cac6ab0d9d2c"
     end
   end
 
