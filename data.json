@@ -1,21 +1,21 @@
 {
     "osx": {
         "arm" : {
-            "url": "https://toki-labs.com/cdn/oto/oto_0.0.232.tar.gz",
+            "name": "oto_0.0.232.tar.gz",
             "sha256": "89c24f593ef1e36dcb48bfc5afc33a2aadce119274443da14515008495b9fbb4"
         },
         "x64" : {
-            "url": "https://toki-labs.com/cdn/oto/oto_0.0.232.tar.gz",
+            "name": "oto_0.0.232.tar.gz",
             "sha256": "89c24f593ef1e36dcb48bfc5afc33a2aadce119274443da14515008495b9fbb4"
         }
     },
     "linux": {
         "arm" : {
-            "url": "https://toki-labs.com/cdn/oto/oto_0.0.232.tar.gz",
+            "name": "oto_0.0.232.tar.gz",
             "sha256": "89c24f593ef1e36dcb48bfc5afc33a2aadce119274443da14515008495b9fbb4"
         },
         "x64" : {
-            "url": "https://toki-labs.com/cdn/oto/oto_0.0.232.tar.gz",
+            "name": "oto_0.0.232.tar.gz",
             "sha256": "89c24f593ef1e36dcb48bfc5afc33a2aadce119274443da14515008495b9fbb4"
         }
     }
