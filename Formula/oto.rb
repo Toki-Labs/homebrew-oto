@@ -9,19 +9,19 @@ class Oto < Formula
 
   if OS.mac?
     if Hardware::CPU.arm? # Apple Silicon (arm64) 아키텍처인 경우
-      url "https://toki-labs.com/cdn/oto/osx/oto_0.0.262.tar.gz_OSX_ARM"
-      sha256 "48d1f57ef95e234686b4ff747b27e26f7bd290b6181c30329db83c6d4fc31e29_OSX_ARM"
+      url "https://toki-labs.com/cdn/oto/osx/FILE_NAME_OSX_ARM"
+      sha256 "SHA256_OSX_ARM"
     elsif Hardware::CPU.intel? # Intel (x86_64) 아키텍처인 경우
-      url "https://toki-labs.com/cdn/oto/osx/oto_0.0.262.tar.gz_OSX_X86_64"
-      sha256 "48d1f57ef95e234686b4ff747b27e26f7bd290b6181c30329db83c6d4fc31e29_OSX_X86_64"
+      url "https://toki-labs.com/cdn/oto/osx/FILE_NAME_OSX_X86_64"
+      sha256 "SHA256_OSX_X86_64"
     end
   elsif OS.linux?
     if Hardware::CPU.arm? # ARM 아키텍처인 경우
-      url "https://toki-labs.com/cdn/oto/linux/oto_0.0.262.tar.gz_LINUX_ARM"
-      sha256 "48d1f57ef95e234686b4ff747b27e26f7bd290b6181c30329db83c6d4fc31e29_LINUX_ARM"
+      url "https://toki-labs.com/cdn/oto/linux/FILE_NAME_LINUX_ARM"
+      sha256 "SHA256_LINUX_ARM"
     elsif Hardware::CPU.intel? # Intel/AMD 아키텍처인 경우
-      url "https://toki-labs.com/cdn/oto/linux/oto_0.0.262.tar.gz_LINUX_X86_64"
-      sha256 "48d1f57ef95e234686b4ff747b27e26f7bd290b6181c30329db83c6d4fc31e29_LINUX_X86_64"
+      url "https://toki-labs.com/cdn/oto/linux/FILE_NAME_LINUX_X86_64"
+      sha256 "SHA256_LINUX_X86_64"
     end
   end
 
