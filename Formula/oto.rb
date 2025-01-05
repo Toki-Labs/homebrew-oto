@@ -4,13 +4,13 @@
 class Oto < Formula
   desc "oto Automation tool"
   homepage "https://toki-labs.com/oto"
-  version "0.0.279"
+  version "0.0.280"
   license ""
 
   if OS.mac?
     if Hardware::CPU.arm? # Apple Silicon (arm64) 아키텍처인 경우
-      url "https://toki-labs.com/cdn/oto/osx/oto_arm_0.0.279.tar.gz"
-      sha256 "c7113217e67440a1d475869728f36f6fab14fb63af40f9bfed56b1849cd01511"
+      url "https://toki-labs.com/cdn/oto/osx/oto_arm_0.0.280.tar.gz"
+      sha256 "0094d210e3e28f39e06b9dfc2bdab3008749a852400da8ab7ec8b4700e2683f7"
     elsif Hardware::CPU.intel? # Intel (x86_64) 아키텍처인 경우
       url "https://toki-labs.com/cdn/oto/osx/oto_0.0.232.tar.gz"
       sha256 "89c24f593ef1e36dcb48bfc5afc33a2aadce119274443da14515008495b9fbb4"
