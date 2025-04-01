@@ -15,8 +15,8 @@
       "sha256": "89c24f593ef1e36dcb48bfc5afc33a2aadce119274443da14515008495b9fbb4"
     },
     "x64": {
-      "name": "oto_x64_0.0.299.tar.gz",
-      "sha256": "24c919df06024b2d67d5da1a56f8970282f16016e5948754cc95d4060cb5c642"
+      "name": "oto_x64_0.0.300.tar.gz",
+      "sha256": "29f7ea12ed1bdfd586b155e88c82a2a352b82b37f2a77ffa7ab416c1228bc67c"
     }
   }
 }
