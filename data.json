@@ -1,8 +1,8 @@
 {
   "osx": {
     "arm": {
-      "name": "oto_arm_0.0.308.tar.gz",
-      "sha256": "2794e44f9c82b1073d335f300ba0b44154a5ab1f21d81cdd5aaba43d1aa1315d"
+      "name": "oto_arm_0.0.309.tar.gz",
+      "sha256": "18bfcfade0ae6bfc3cd97124f9252993bb9bba5fb4e13f2993521cf03b2f1986"
     },
     "x64": {
       "name": "oto_0.0.232.tar.gz",
