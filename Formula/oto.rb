@@ -20,8 +20,8 @@ class Oto < Formula
       url "https://toki-labs.com/cdn/oto/linux/oto_0.0.232.tar.gz"
       sha256 "89c24f593ef1e36dcb48bfc5afc33a2aadce119274443da14515008495b9fbb4"
     elsif Hardware::CPU.intel? # Intel/AMD 아키텍처인 경우
-      url "https://toki-labs.com/cdn/oto/linux/oto_x64_0.0.329.tar.gz"
-      sha256 "c6ec47857e1113c7878001409140886a2ef85bfd04b1ec5209039b64029ed4e3"
+      url "https://toki-labs.com/cdn/oto/linux/oto_x64_0.0.330.tar.gz"
+      sha256 "55d8833473bf13e80d197bad89389e11e4ecf35495c07f6722db7033a33ce51a"
     end
   end
 
